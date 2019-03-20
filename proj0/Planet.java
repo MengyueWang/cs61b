@@ -24,15 +24,6 @@ public class Planet {
         this.imgFileName = b.imgFileName;
     }
 
-    public Planet() {
-        this.xxPos = 0;
-        this.yyPos = 0;
-        this.xxVel = 0;
-        this.yyVel = 0;
-        this.mass = 0;
-        this.imgFileName = "";
-    }
-
     public double calcDistance(Planet b) {
         double dist;
         dist = (b.xxPos - this.xxPos) * (b.xxPos - this.xxPos) + (b.yyPos - this.yyPos) * (b.yyPos - this.yyPos);
