@@ -19,7 +19,7 @@ public class NBody {
         return radius;
     }
 
-    public static Planet[] readBodies(String fname) {
+    public static Planet[] readPlanets(String fname) {
         Scanner scan;
         ArrayList<Planet> allBodiesArrList = new ArrayList<Planet>();
         try {
@@ -58,7 +58,7 @@ public class NBody {
         }
 
         // Read simulation data from file
-        Planet[] planets = readBodies(pfile); // readBodies(pfile);
+        Planet[] planets = readPlanets(pfile); // readBodies(pfile);
         double radius = readRadius(pfile); // readRadius(pfile);
 
         // TODO Draw the background
